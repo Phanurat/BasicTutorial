@@ -1,0 +1,12 @@
+# Unity 3D
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Ll]ibrary-collab-ignore/
+[Uu]serSettings/
+
+# VS Code
+.vscode/
