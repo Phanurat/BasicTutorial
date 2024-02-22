@@ -30,6 +30,23 @@ public class MyScript : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         movement = new Vector3(x, y, z);
+
+        //ทำงานกับ Mouse ซ้าย
+        if (Input.GetMouseButtonDown(0))
+        {
+            transform.Rotate(0f,1f*speed,0f);//0 => 10
+        }
+        //ทำงานกับ Mouse ขวา
+        if (Input.GetMouseButtonDown(1))
+        {
+            transform.Rotate(0f,-1f*speed,0f);
+        }
+        //ทำงานกับ Mouse กลาง
+        if (Input.GetMouseButtonDown(2))
+        {
+            transform.Rotate(-1f*speed,0f,0f);
+        }
+
     }
 
     private void FixedUpdate(){
