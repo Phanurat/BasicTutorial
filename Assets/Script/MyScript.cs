@@ -10,9 +10,18 @@ public class MyScript : MonoBehaviour
         Debug.Log("Starting Running");
     }
 
+    private void Awake()
+    {
+        Debug.Log("Awake Running");
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Update Running");
+        //Debug.Log("Update Running");
+    }
+
+    private void FixedUpdate(){
+        Debug.Log("FixedUpdate Running");
     }
 }
