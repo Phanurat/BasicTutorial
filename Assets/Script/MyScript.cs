@@ -32,7 +32,15 @@ public class MyScript : MonoBehaviour
         movement = new Vector3(x, y, z);
     }
 
-    /*private void FixedUpdate(){
-        Debug.Log("FixedUpdate Running");
-    }*/
+    private void FixedUpdate(){
+        //Debug.Log("FixedUpdate Running");
+
+        movePlayer(movement);
+    }
+
+    void movePlayer(Vector3 direction){
+        //rb.velocity = (direction * speed);
+        rb.MovePosition(transform.position+(direction * speed * Time.deltaTime));
+        //rb.AddForce(direction * speed);
+    }
 }
