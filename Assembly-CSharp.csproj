@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\MyScript.cs" />
+    <Compile Include="Assets\Script\RemoveBox.cs" />
     <Compile Include="Assets\Script\PointScript.cs" />
   </ItemGroup>
   <ItemGroup>
