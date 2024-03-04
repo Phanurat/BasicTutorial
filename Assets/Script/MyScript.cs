@@ -32,7 +32,7 @@ public class MyScript : MonoBehaviour
         movement = new Vector3(x, y, z);
 
         //ทำงานกับ Mouse ซ้าย
-        if (Input.GetMouseButtonDown(0))
+        /*if (Input.GetMouseButtonDown(0))
         {
             transform.Rotate(0f,1f*speed,0f);//0 => 10
         }
@@ -45,14 +45,14 @@ public class MyScript : MonoBehaviour
         if (Input.GetMouseButtonDown(2))
         {
             transform.Rotate(-1f*speed,0f,0f);
-        }
+        }*/
 
     }
 
     private void FixedUpdate(){
         //Debug.Log("FixedUpdate Running");
 
-        movePlayer(movement);
+        //movePlayer(movement);
     }
 
     void movePlayer(Vector3 direction){
